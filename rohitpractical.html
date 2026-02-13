@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+          
+        }
+
+      
+        .logo {
+            float: left;
+            color: white;
+            padding: 15px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        ul.menu {
+            float: right; /* Floating the list to the right side */
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            float: left;
+        }
+
+      
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 25px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #555;
+        }
+
+      
+        .clearfix {
+            clear: both;
+        }
+
+    
+        .container {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border: 1px solid #ddd;
+        }
+
+      
+        .highlight {
+            display: inline; 
+            background-color: yellow;
+            font-weight: bold;
+            padding: 2px; 
+        }
+
+       
+        .box {
+            display: inline-block; 
+            width: 150px;
+            height: 100px;
+            background-color: #3498db;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px; /* Vertically centers text */
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MySite</div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </nav>
+
+    <div class="container">
+        <h1>Understanding CSS Properties</h1>
+        
+        <h3>Example of "Inline"</h3>
+        <p>
+            Standard text is block level. But <span class="highlight">this highlighted text</span> is 
+            <strong>inline</strong>. It flows naturally within the sentence and does not break onto a new line.
+        </p>
+
+        <hr>
+
+        <h3>Example of "Inline-Block"</h3>
+        <p>These boxes are <strong>inline-block</strong>. They sit next to each other (like inline), but we can give them width and height (like block).</p>
+        
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+</body>
+</html>
